@@ -1,4 +1,4 @@
-﻿<Window x:Class="Bookstore.MainWindow"
+<Window x:Class="Bookstore.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -14,7 +14,12 @@
         
         <TextBox x:Name="txtSearch" Grid.Row="0" Margin="310,41,310,366" Text="Enter book title"/>
         <Button x:Name="btnSearch" Margin="351,99,351,301" Content="Search" Click="btnSearch_Click"/>
-        <ListBox x:Name="lbSearchResults" Margin="162,164,162,35"/>
+        <ListBox x:Name="lbSearchResults" Margin="162,164,162,35" SelectionChanged="lbSearchResults_SelectionChanged"/>
+        <Button x:Name="btnAddToLibrary" Content="Add to Library" Click="btnAddToLibrary_Click" Margin="542,100,116,297"/>
+        <Button x:Name="btnRemoveFromLibrary" Content="Remove from Library" Click="btnRemoveFromLibrary_Click" Margin="162,100,517,297"/>
+        <ListBox x:Name="lbDisplayDetails" Margin="478,164,10,19"/>
+       
+
 
     </Grid>
 </Window>
